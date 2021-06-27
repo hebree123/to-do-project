@@ -1,0 +1,164 @@
+/* Variables and Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Changa+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  margin: 0 30px;
+  background-color: #E5E2E1;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+header {
+  position: relative;
+  top: 70px;
+  width: auto;
+}
+
+header h1 {
+  background-color: #3185FC;
+  background-image: linear-gradient(315deg, #3185FC 0%, #4ebeff 74%);
+  color: white;
+  border-radius: 25px;
+  padding: 6px 6px 6px 6px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  border: white 5px solid;
+  letter-spacing: 4px;
+  font-family: 'Changa One', cursive;
+}
+
+.todo_list {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+  height: 60vh;
+  width: auto;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.todo {
+  margin: 5px auto;
+  background: white;
+  color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+form {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+}
+
+form .todo_input {
+  all: unset;
+  background-color: white;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  padding: 10px 0 10px 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 10px;
+  border-radius: 25px;
+}
+
+form .todo_button {
+  all: unset;
+  color: #3185FC;
+  font-size: 1.875rem;
+  position: absolute;
+  right: 15px;
+  top: 8px;
+}
+
+::-webkit-input-placeholder {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #A8A8A8;
+}
+
+:-ms-input-placeholder {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #A8A8A8;
+}
+
+::-ms-input-placeholder {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #A8A8A8;
+}
+
+::placeholder {
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  color: #A8A8A8;
+}
+
+.todo {
+  list-style-type: none;
+  background-color: transparent;
+  border-bottom: solid 5px #E5E2E1;
+  margin: 0px 20px 0 20px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.todo li {
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  margin-top: 15px;
+}
+
+.todo .complete_btn {
+  all: unset;
+  color: #3185FC;
+  font-size: 1.6rem;
+}
+
+.trash_can {
+  position: relative;
+}
+
+.trash_can .todo_delete {
+  all: unset;
+  position: absolute;
+  bottom: 15px;
+  left: 23px;
+}
+
+.trash_can .todo_delete i {
+  font-size: 1.875rem;
+  color: #3185FC;
+}
+/*# sourceMappingURL=style.css.map */

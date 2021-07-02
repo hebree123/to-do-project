@@ -23,12 +23,15 @@ body {
 header {
     position: relative;
     width: auto;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 25px;
+
     h1 {
         background-color: $blue;
         background-image: linear-gradient(315deg, $blue 0%, #4ebeff 74%); 
         color: white;
         border-radius: 25px;
-        padding: 6px 6px 6px 6px;
+        padding: 9px 6px 9px 6px;
         text-align: center;
         font-weight: 700;
         font-size: 13vw;
@@ -99,8 +102,9 @@ form {
 
 ::placeholder {
     letter-spacing: 1.5px;
-    font-weight: 600;
+    font-weight: 400;
     color: #A8A8A8;
+    font-family: 'Changa One', cursive;
 }
 
 .todo {
@@ -174,4 +178,21 @@ form {
 .complete_todo {
     color: #A8A8A8;
     //text-decoration: line-through 3px;
+}
+
+footer {
+    width: auto;
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    justify-content: center;
+    i {
+        font-size: calc(2.1rem + 1vw);
+        color: $blue;
+    }
+
+    i:hover {
+        font-size: calc(2.6rem + 1vw);
+        transition: font-size 0.3s;
+    }
 }

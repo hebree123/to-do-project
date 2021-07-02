@@ -21,6 +21,9 @@ body {
 header {
   position: relative;
   width: auto;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 25px;
 }
 
 header h1 {
@@ -28,7 +31,7 @@ header h1 {
   background-image: linear-gradient(315deg, #3185FC 0%, #4ebeff 74%);
   color: white;
   border-radius: 25px;
-  padding: 6px 6px 6px 6px;
+  padding: 9px 6px 9px 6px;
   text-align: center;
   font-weight: 700;
   font-size: 13vw;
@@ -109,26 +112,30 @@ form .todo_button {
 
 ::-webkit-input-placeholder {
   letter-spacing: 1.5px;
-  font-weight: 600;
+  font-weight: 400;
   color: #A8A8A8;
+  font-family: 'Changa One', cursive;
 }
 
 :-ms-input-placeholder {
   letter-spacing: 1.5px;
-  font-weight: 600;
+  font-weight: 400;
   color: #A8A8A8;
+  font-family: 'Changa One', cursive;
 }
 
 ::-ms-input-placeholder {
   letter-spacing: 1.5px;
-  font-weight: 600;
+  font-weight: 400;
   color: #A8A8A8;
+  font-family: 'Changa One', cursive;
 }
 
 ::placeholder {
   letter-spacing: 1.5px;
-  font-weight: 600;
+  font-weight: 400;
   color: #A8A8A8;
+  font-family: 'Changa One', cursive;
 }
 
 .todo {
@@ -202,5 +209,28 @@ form .todo_button {
 
 .complete_todo {
   color: #A8A8A8;
+}
+
+footer {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer i {
+  font-size: calc(2.1rem + 1vw);
+  color: #3185FC;
+}
+
+footer i:hover {
+  font-size: calc(2.6rem + 1vw);
+  -webkit-transition: font-size 0.3s;
+  transition: font-size 0.3s;
 }
 /*# sourceMappingURL=style.css.map */

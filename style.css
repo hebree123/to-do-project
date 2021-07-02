@@ -13,14 +13,13 @@ body {
       grid-template-rows: auto;
   -ms-grid-columns: auto;
       grid-template-columns: auto;
-  margin: 0 30px;
+  margin: 70px 30px;
   background-color: #E5E2E1;
   font-family: 'Noto Sans JP', sans-serif;
 }
 
 header {
   position: relative;
-  top: 70px;
   width: auto;
 }
 
@@ -32,33 +31,37 @@ header h1 {
   padding: 6px 6px 6px 6px;
   text-align: center;
   font-weight: 700;
-  font-size: 3rem;
-  border: white 5px solid;
+  font-size: 13vw;
   letter-spacing: 4px;
   font-family: 'Changa One', cursive;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.todo_list {
-  position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 80px;
-  height: 60vh;
-  width: auto;
+main {
+  margin-top: 20px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: white;
   border-radius: 25px;
 }
 
+.todo_list {
+  position: relative;
+  margin-top: 15px;
+  height: 100%;
+  width: auto;
+  padding: 5px 0 40px 0;
+}
+
 .todo {
-  margin: 5px auto;
+  margin-bottom: 20px;
   background: white;
   color: #000000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.2rem;
-  padding: 0.3rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -74,7 +77,8 @@ form {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  width: 100%;
+  height: auto;
+  border-radius: 25px;
 }
 
 form .todo_input {
@@ -88,15 +92,19 @@ form .todo_input {
           box-sizing: border-box;
   margin-top: 10px;
   border-radius: 25px;
+  position: relative;
+  font-size: calc(1rem + 1vw);
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 form .todo_button {
   all: unset;
   color: #3185FC;
-  font-size: 1.875rem;
+  font-size: calc(1.875rem + 1vw);
   position: absolute;
   right: 15px;
-  top: 8px;
+  top: 9px;
 }
 
 ::-webkit-input-placeholder {
@@ -126,39 +134,73 @@ form .todo_button {
 .todo {
   list-style-type: none;
   background-color: transparent;
-  border-bottom: solid 5px #E5E2E1;
+  border-bottom: solid 4px #E5E2E1;
   margin: 0px 20px 0 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  position: relative;
+  width: auto;
 }
 
 .todo li {
   font-weight: 600;
-  letter-spacing: 0.6px;
+  letter-spacing: 1.3px;
   margin-top: 15px;
 }
 
 .todo .complete_btn {
   all: unset;
   color: #3185FC;
-  font-size: 1.6rem;
+  font-size: calc(1.6rem + 1vw);
+  position: absolute;
+}
+
+.todo .complete_btn_filled {
+  all: unset;
+  color: #3185FC;
+  font-size: calc(1.6rem + 1vw);
+  position: absolute;
+  display: none;
+}
+
+.todo .delete_todo {
+  all: unset;
+  position: absolute;
+  left: calc(30px + 1vw);
+  color: #e91814;
+  font-size: calc(1.6rem + 1vw);
+  display: none;
 }
 
 .trash_can {
   position: relative;
+  width: auto;
+  margin-top: 35px;
 }
 
 .trash_can .todo_delete {
   all: unset;
   position: absolute;
-  bottom: 15px;
-  left: 23px;
+  bottom: 107px;
+  left: 20px;
 }
 
 .trash_can .todo_delete i {
-  font-size: 1.875rem;
+  font-size: calc(1.875rem + 1vw);
   color: #3185FC;
+}
+
+.todo_item {
+  position: relative;
+  bottom: 8px;
+  font-size: auto;
+  font-weight: 600;
+  font-size: calc(1.3rem + 1vw);
+}
+
+.complete_todo {
+  color: #A8A8A8;
 }
 /*# sourceMappingURL=style.css.map */

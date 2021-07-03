@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To-Dooski</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5a8aaa603a.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/5a8aaa603a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <header>
-        <h1>To-Dooski!</h1>
+      <h1>To-Dooski!</h1>
     </header>
-    
+
     <main>
-        <ul class="todo_list"></ul>
+      <ul class="todo_list"></ul>
 
-        <div class="trash_can">
-            <button class="todo_delete">
-                <i class="fas fa-trash-alt"></i>
-            </button>
-        </div>
-
-    </main>
-    
-    <form>
-        <input type="text" placeholder="To-Dooski" class="todo_input" maxlength="15"/>
-        <button class="todo_button" type="submit">
-            <i class="fas fa-plus-circle"></i>
+      <div class="trash_can">
+        <button class="todo_delete">
+          <i class="fas fa-trash-alt"></i>
         </button>
+      </div>
+    </main>
+
+    <form>
+      <input
+        type="text"
+        placeholder="To-Dooski"
+        class="todo_input"
+        maxlength="15"
+      />
+      <button class="todo_button" type="submit">
+        <i class="fas fa-plus-circle"></i>
+      </button>
     </form>
 
     <footer>
-        <a href="https://github.com/hebree123/to-do-project"><i class="fab fa-github"></i></a>
+      <a href="https://github.com/hebree123/to-do-project"
+        ><i class="fab fa-github"></i
+      ></a>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

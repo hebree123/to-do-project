@@ -14,8 +14,8 @@ body {
   -ms-grid-columns: auto;
       grid-template-columns: auto;
   margin: 70px 30px;
-  background-color: #E5E2E1;
-  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #e5e2e1;
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 header {
@@ -27,8 +27,8 @@ header {
 }
 
 header h1 {
-  background-color: #3185FC;
-  background-image: linear-gradient(315deg, #3185FC 0%, #4ebeff 74%);
+  background-color: #3185fc;
+  background-image: linear-gradient(315deg, #3185fc 0%, #4ebeff 74%);
   color: white;
   border-radius: 25px;
   padding: 9px 6px 9px 6px;
@@ -36,7 +36,7 @@ header h1 {
   font-weight: 700;
   font-size: 13vw;
   letter-spacing: 4px;
-  font-family: 'Changa One', cursive;
+  font-family: "Changa One", cursive;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
@@ -103,7 +103,7 @@ form .todo_input {
 
 form .todo_button {
   all: unset;
-  color: #3185FC;
+  color: #3185fc;
   font-size: calc(1.875rem + 1vw);
   position: absolute;
   right: 15px;
@@ -113,35 +113,35 @@ form .todo_button {
 ::-webkit-input-placeholder {
   letter-spacing: 1.5px;
   font-weight: 400;
-  color: #A8A8A8;
-  font-family: 'Changa One', cursive;
+  color: #a8a8a8;
+  font-family: "Changa One", cursive;
 }
 
 :-ms-input-placeholder {
   letter-spacing: 1.5px;
   font-weight: 400;
-  color: #A8A8A8;
-  font-family: 'Changa One', cursive;
+  color: #a8a8a8;
+  font-family: "Changa One", cursive;
 }
 
 ::-ms-input-placeholder {
   letter-spacing: 1.5px;
   font-weight: 400;
-  color: #A8A8A8;
-  font-family: 'Changa One', cursive;
+  color: #a8a8a8;
+  font-family: "Changa One", cursive;
 }
 
 ::placeholder {
   letter-spacing: 1.5px;
   font-weight: 400;
-  color: #A8A8A8;
-  font-family: 'Changa One', cursive;
+  color: #a8a8a8;
+  font-family: "Changa One", cursive;
 }
 
 .todo {
   list-style-type: none;
   background-color: transparent;
-  border-bottom: solid 4px #E5E2E1;
+  border-bottom: solid 4px #e5e2e1;
   margin: 0px 20px 0 20px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -159,14 +159,14 @@ form .todo_button {
 
 .todo .complete_btn {
   all: unset;
-  color: #3185FC;
+  color: #3185fc;
   font-size: calc(1.6rem + 1vw);
   position: absolute;
 }
 
 .todo .complete_btn_filled {
   all: unset;
-  color: #3185FC;
+  color: #3185fc;
   font-size: calc(1.6rem + 1vw);
   position: absolute;
   display: none;
@@ -196,7 +196,7 @@ form .todo_button {
 
 .trash_can .todo_delete i {
   font-size: calc(1.875rem + 1vw);
-  color: #3185FC;
+  color: #3185fc;
 }
 
 .todo_item {
@@ -208,7 +208,7 @@ form .todo_button {
 }
 
 .complete_todo {
-  color: #A8A8A8;
+  color: #a8a8a8;
 }
 
 footer {
@@ -225,7 +225,7 @@ footer {
 
 footer i {
   font-size: calc(2.1rem + 1vw);
-  color: #3185FC;
+  color: #3185fc;
 }
 
 footer i:hover {
